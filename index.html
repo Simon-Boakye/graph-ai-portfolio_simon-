@@ -146,6 +146,18 @@
             align-items: center;
         }
 
+        /* New Avatar Styles */
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-primary);
+            box-shadow: 0 0 30px rgba(52, 211, 153, 0.3);
+            margin-bottom: 32px;
+            display: block;
+        }
+
         .hero-tag {
             display: inline-block;
             background: rgba(52, 211, 153, 0.1);
@@ -360,6 +372,9 @@
             .hero-tag {
                 margin: 0 auto 24px auto;
             }
+            .profile-avatar {
+                margin: 0 auto 32px auto; /* Centers avatar on mobile */
+            }
             .about-grid {
                 grid-template-columns: 1fr;
             }
@@ -381,6 +396,9 @@
         <div class="container">
             <div class="hero-layout">
                 <div>
+                    <!-- Added Avatar Here -->
+                    <img src="https://github.com/Simon-Boakye/graph-ai-portfolio_simon-/blob/main/Passport.JPG?raw=true" alt="Simon Boakye" class="profile-avatar">
+                    
                     <span class="hero-tag">MSc Global Health Candidate</span>
                     <h1>Generative AI for Work & Research</h1>
                     <p>
